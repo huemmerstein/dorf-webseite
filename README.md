@@ -10,3 +10,7 @@ flask --app run run --debug
 ```
 
 Die Datenbank wird über die Umgebungsvariable `DATABASE_URL` konfiguriert (Standard: `postgresql://postgres:postgres@localhost:5432/dorfwebseite`).
+
+## Administration
+
+Hinweise zur Verwaltung der Inhalte finden sich in [ADMIN.md](ADMIN.md).
