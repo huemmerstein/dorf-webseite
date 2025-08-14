@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}News{% endblock %}
+{% block content %}
+<h1>News</h1>
+<ul>
+  {% for post in posts %}
+  <li><a href="/news/{{ post.id }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+<p><a href="/news/rss">RSS Feed</a></p>
+{% endblock %}
