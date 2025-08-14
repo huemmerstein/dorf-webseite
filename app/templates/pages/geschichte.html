@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Geschichte{% endblock %}
+{% block content %}
+<h1>Geschichte des Ortes</h1>
+{% if page %}
+{{ page.body | safe }}
+{% else %}
+<p>Inhalt folgt.</p>
+{% endif %}
+{% endblock %}

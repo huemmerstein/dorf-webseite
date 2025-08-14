@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Pinwand{% endblock %}
+{% block content %}
+<h1>Pinwand</h1>
+<ul>
+  {% for post in posts %}
+  <li><strong>{{ post.title }}</strong> - {{ post.body }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
