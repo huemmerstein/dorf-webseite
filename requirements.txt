@@ -1,0 +1,6 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+feedgen
+icalendar
+psycopg2-binary

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Veranstaltungen{% endblock %}
+{% block content %}
+<h1>Veranstaltungen</h1>
+<ul>
+  {% for event in events %}
+  <li>{{ event.start }}: {{ event.title }}</li>
+  {% endfor %}
+</ul>
+<p><a href="/events/ics">Kalender exportieren</a></p>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Flurnamen{% endblock %}
+{% block content %}
+<h1>Flurnamen</h1>
+<ul>
+  {% for item in items %}
+  <li>{{ item.name }} - {{ item.erklaerung }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
